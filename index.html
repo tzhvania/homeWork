@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="angular.min.js"></script>
+    <script src="homeWork.js"></script>
+</head>
+<body ng-app="MyApplication" ng-controller="MyController">
+<header>
+    <div class="container">
+        <h1>it's header</h1>
+    </div>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>Home</li>
+                <li ng-click="page = 'circle'" ng-class="{ active: page == 'circle' }">Circle</li>
+                <li>Post</li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<div class="main">
+    <div class="container">
+        <div class="content" ng-show="page == 'circle'">
+            <input placeholder="search/filter by title" type="text"  ng-model="title" />
+
+            <div class="circle" ng-repeat="u in elements| filter:title">
+                <h3>{{u.title}}</h3>
+                <p>{{u.text}}</p>
+            </div>
+
+        </div>
+        <div class="grad">&nbsp;</div>
+    </div>
+</div>
+
+<footer>
+    <div class="container"><h1>it's footer</h1></div>
+</footer>
+
+</body>
+</html>

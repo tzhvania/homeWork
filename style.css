@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.grad {
+    background: #ff7c00; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff7c00 0%, #290a59 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7c00), color-stop(100%, #290a59)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ff7c00 0%, #290a59 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ff7c00 0%, #290a59 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ff7c00 0%, #290a59 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ff7c00 0%, #290a59 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7c00', endColorstr='#290a59', GradientType=0); /* IE6-9 */
+    height: 275px;
+    width: 275px;
+    float: right;
+    margin: 4px 4px 4px 0;
+
+}
+
+.content {
+    height: 853px;
+    background-color: #821b5c;
+    width: 650px;
+    float: left;
+    margin: 3px 4px 68px 4px;
+    padding: 5px 20px;
+}
+
+input {
+
+    background-color: #e16c0c;
+    border: none;
+    width: 231px;
+    padding: 15px 20px;
+    color:red;
+}
+
+header {
+
+}
+
+header > .container {
+    background-color: #5b788e;
+    height: 55px;
+}
+
+h1 {
+    color: red;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+
+}
+
+.main .container {
+    background-color: #333f49;
+    min-height: 916px;
+}
+
+footer {
+    margin-top: 3px;
+}
+
+footer .container {
+    background-color: #5b788e;
+    height: 51px;
+}
+
+nav {
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    background-color: #5b788e;
+    padding: 10px 27px;
+    margin: 4px 2px 2px 0;
+}
+
+nav ul li:first-child {
+    padding: 10px 30px;
+}
+
+nav ul li:last-child {
+    padding: 10px 43px;
+}
+
+nav .container {
+    background: transparent;
+    overflow: hidden;
+}
+
+p {
+    padding-left:22px;
+    color: #ffffff;
+}
+
+
+h3 {
+    padding-left:22px;
+    color: #2585d0;
+    display:block;
+    margin-bottom: 8px;
+
+}
+
+li.active{
+    background-color: #aab9c5;
+}
+::-webkit-input-placeholder {
+    color: red;
+}
