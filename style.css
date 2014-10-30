@@ -25,12 +25,13 @@ body {
 }
 
 .content {
-    height: 853px;
+    /* height: 853px; */
     background-color: #821b5c;
     width: 650px;
     float: left;
     margin: 3px 4px 68px 4px;
     padding: 5px 20px;
+    overflow: hidden;
 }
 
 input {
@@ -51,6 +52,12 @@ header > .container {
     height: 55px;
 }
 
+header img.logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 11px;
+}
+
 h1 {
     color: red;
     float: left;
@@ -64,11 +71,15 @@ h1 {
 
 .main .container {
     background-color: #333f49;
-    min-height: 916px;
+    overflow: hidden;
+    /* min-height: 916px; */
 }
 
 footer {
-    margin-top: 3px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 51px;
 }
 
 footer .container {

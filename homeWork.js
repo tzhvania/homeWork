@@ -1,16 +1,17 @@
 /**
  * Created by lunaa on 10/2/2014.
  */
-var app = angular.module('MyApplication', [])
+var app = angular.module('MyApplication', []);
+
 var ctrl = app.controller('MyController', function ($scope) {
 
+	$scope.page = 'circle';
+
 	$scope.elements = [
-
-		{'title': 'pirveli', 'text': 'jandaba' },
-		{'title': 'meore', 'text': 'jandabasdasda' },
-		{'title': 'mesame', 'text': 'jandaasdasdasdasdba' },
-		{'title': 'meotxe', 'text': 'jaasdasdasdasdndaba' },
-		{'title': 'mexute', 'text': 'janasdsdasasddaba' }
-
+		{'title': 'pirveli', 'text': 'pirveli variantis SemTxvevaSi video-serveri Rebulobs umartives saxes,' + ' da mas SeiZlia uzrunvelyos fiqsirebuli raodenobis iseTi filmebis gaSveba, romlebic gamoiyeneben ' + 'erTi da igive kadrebis siCqares. am SemTxvevaSi gamoiyeneba dagegmvis yvelaze martivi algoriTmi.' + ' TiToeuli filmisaTvis iqmneba calkeuli procesi (an nakadi), romelmac unda waikiTxos ' + 'video-filmis kadrebi diskidan da gadaagzavnos isini momxmarebelTan.vinaidan yvela procesi Tanabaria, TiToeuli kadrisaTvis ' },
+		{'title': 'meore', 'text': 'garkveuli siCqariT, magaliTad, wamSi 30 jer NTSC-sistemisaTvis. yvela am signalis Sedegad gaiSveba yvela procesi Tanmimdevrulad erTidaigive rigiT. daasrulebs ra Tavis samuSaos, procesi mimarTavs os-s, romelic anTavisuflebs procesors saaTis Semdeg signalamde. sanam procesebis raodenoba ar aris didi da mTeli samuSao SeiZleba Sesruldes erTi kadris xangrZlivobis periodSi, aseTi dagegmvis algoriTmi muSaobs warmatebulad. samwuxarod, rogrogobiTi dagegmvis algoriTmi realur cxovrebaSi gamoiyeneba iSviaTad. saqme ki is aris, rom momxmarebelTa raodenoba periodulad icvleba, kadrebis zomebi cvalebadia (I-kadri, P-kadri, B-kadri), da sxvadasxva filmebSi adgili aqvs gansxvavebul siCqareebs. anu, sxvadasxva nakadebis momsaxure procesebs sWirdebaT muSaoba sxvadasxva sixSiriT sxvadasxva samuSaos moculobis Sesasruleblad da maTi dasrulebis sxvadasva vadebiT.' },
+		{'title': 'mesame', 'text': 'garkveuli siCqariT, magaliTad, wamSi 30 jer NTSC-sistemisaTvis. yvela am signalis Sedegad gaiSveba yvela procesi Tanmimdevrulad erTidaigive rigiT. daasrulebs ra Tavis samuSaos, procesi mimarTavs os-s, romelic anTavisuflebs procesors saaTis Semdeg signalamde. sanam procesebis raodenoba ar aris didi da mTeli samuSao SeiZleba Sesruldes erTi kadris xangrZlivobis periodSi, aseTi dagegmvis algoriTmi muSaobs warmatebulad. samwuxarod, rogrogobiTi dagegmvis algoriTmi realur cxovrebaSi gamoiyeneba iSviaTad. saqme ki is aris, rom momxmarebelTa raodenoba periodulad icvleba, kadrebis zomebi cvalebadia (I-kadri, P-kadri, B-kadri), da sxvadasxva filmebSi adgili aqvs gansxvavebul siCqareebs. anu, sxvadasxva nakadebis momsaxure procesebs sWirdebaT muSaoba sxvadasxva sixSiriT sxvadasxva samuSaos moculobis Sesasruleblad da maTi dasrulebis sxvadasva vadebiT.' },
+		{'title': 'meotxe', 'text': 'garkveuli siCqariT, magaliTad, wamSi 30 jer NTSC-sistemisaTvis. yvela am signalis Sedegad gaiSveba yvela procesi Tanmimdevrulad erTidaigive rigiT. daasrulebs ra Tavis samuSaos, procesi mimarTavs os-s, romelic anTavisuflebs procesors saaTis Semdeg signalamde. sanam procesebis raodenoba ar aris didi da mTeli samuSao SeiZleba Sesruldes erTi kadris xangrZlivobis periodSi, aseTi dagegmvis algoriTmi muSaobs warmatebulad. samwuxarod, rogrogobiTi dagegmvis algoriTmi realur cxovrebaSi gamoiyeneba iSviaTad. saqme ki is aris, rom momxmarebelTa raodenoba periodulad icvleba, kadrebis zomebi cvalebadia (I-kadri, P-kadri, B-kadri), da sxvadasxva filmebSi adgili aqvs gansxvavebul siCqareebs. anu, sxvadasxva nakadebis momsaxure procesebs sWirdebaT muSaoba sxvadasxva sixSiriT sxvadasxva samuSaos moculobis Sesasruleblad da maTi dasrulebis sxvadasva vadebiT.' },
+		{'title': 'mexute', 'text': 'garkveuli siCqariT, magaliTad, wamSi 30 jer NTSC-sistemisaTvis. yvela am signalis Sedegad gaiSveba yvela procesi Tanmimdevrulad erTidaigive rigiT. daasrulebs ra Tavis samuSaos, procesi mimarTavs os-s, romelic anTavisuflebs procesors saaTis Semdeg signalamde. sanam procesebis raodenoba ar aris didi da mTeli samuSao SeiZleba Sesruldes erTi kadris xangrZlivobis periodSi, aseTi dagegmvis algoriTmi muSaobs warmatebulad. samwuxarod, rogrogobiTi dagegmvis algoriTmi realur cxovrebaSi gamoiyeneba iSviaTad. saqme ki is aris, rom momxmarebelTa raodenoba periodulad icvleba, kadrebis zomebi cvalebadia (I-kadri, P-kadri, B-kadri), da sxvadasxva filmebSi adgili aqvs gansxvavebul siCqareebs. anu, sxvadasxva nakadebis momsaxure procesebs sWirdebaT muSaoba sxvadasxva sixSiriT sxvadasxva samuSaos moculobis Sesasruleblad da maTi dasrulebis sxvadasva vadebiT.' }
 	];
 });
